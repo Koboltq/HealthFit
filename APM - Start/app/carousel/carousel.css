@@ -1,0 +1,177 @@
+.carousel{
+    overflow:hidden;
+    width:100%;
+    position: relative;
+}
+.slides{
+    list-style:none;
+    position:relative;
+    margin: 0 auto;
+    padding: 0;
+    width:500%; 
+    overflow:hidden;
+    -moz-animation:carousel 20s infinite;
+    -webkit-animation:carousel 20s infinite;
+    animation:carousel 20s infinite;
+}
+.slides > li{
+    position:relative;
+    float:left;
+    width: 20%; 
+}
+.background-image{
+    display:block;
+    width:100%;
+    max-width:100%;
+    
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+.carousel h1{
+    margin-bottom: 0;
+    /*padding:1.5em 0.5em 1.5em 0.5em;*/
+    position:absolute;
+    right:0px;
+    left:0px;
+    position:absolute;
+    margin: 4% 15% 5% 10%;
+    text-align:center;
+    color:#333333;
+    /*background-color:rgba(0,0,0,0.75);*/
+    text-transform: uppercase;
+}
+
+.carousel h3{
+    margin-bottom: 0;
+    /*padding:1.5em 0.5em 1.5em 0.5em;*/
+    position:absolute;
+    right:0px;
+    left:0px;
+    position:absolute;
+    margin: 4% 15% 5% 10%;
+    text-align:center;
+    color:#333333;
+    /*background-color:rgba(0,0,0,0.75);*/
+    text-transform: uppercase;
+}
+
+.slides h1, .slides h3 {
+    color: black;
+}
+
+h1 { 
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  position: relative;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+h3 {
+      text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  position: relative;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  z-index: -1;
+}
+
+ h3::before {
+    content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  height: 600px;
+  z-index: -1;
+ }
+
+@keyframes carousel{
+    0% { left:0%; }
+    25%   { left:0%; }
+    50% { left:-100%; }
+    75% { left:-100%; }
+    100% { left:0%; }
+    /*0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    /*25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }*/
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .slides h1 {
+        font-size:100px;
+        bottom: 50%;
+    }
+    .slides h3 {
+        font-size:35px;
+        bottom: 46%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .justify-content-md-center {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+    .slides h1 {
+        font-size: 75px;
+        bottom:50%;
+    }
+    .slides h3 {
+        font-size:20px;
+        bottom: 46%;
+    }
+}
+@media  (max-width: 768px){
+    .container {
+        max-width: 540px;
+    }
+    .slides h1 {
+        font-size: 50px;
+        bottom: 45%;
+    }
+    .slides h3 {
+        font-size:10px;
+        bottom: 40%;
+    }
+}

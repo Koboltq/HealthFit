@@ -1,0 +1,109 @@
+.support-card {
+    background: #f3f3f3;
+    border-radius: 4px;
+    padding:30px;
+    text-align: center;
+}
+
+.support-card img {
+    max-width: 45%;
+}
+
+.support-card:hover {
+    background-color: #5d5d5d ;
+}
+
+
+.circle {
+    border-radius: 100% !important;
+}
+
+.dark-bg {
+    background-color: #373737;
+    color: #cdcdcd;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.icon.large {
+    font-size: 36px;
+    width: 100px;
+    height: 100px;
+    line-height: 97px;
+}
+
+
+h2 {
+    line-height: 42px;
+    margin: 0 0 0 0;
+    font-size:45px;
+    font-family: 'Merriweather';
+}
+
+.figcaption {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.support-title {
+    padding:30px;
+    text-align: center;
+    bottom: -20px;
+    width: 100%;
+}
+
+.support-text {
+    width:100%;
+    max-width: 50%;
+    margin:0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 12px;
+}
+
+p.support-text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.blockquote {
+    position: relative;
+    margin-bottom: 40px;
+}
+.blockquote:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: -20px;
+    border-bottom: 1px solid #666;
+}
+
+h3 {
+    display: block;
+    font-size: 24px;
+    font-family: 'roboto';
+    margin-bottom: 0.5rem;
+    margin-top:35px;
+    font-weight: 500;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}

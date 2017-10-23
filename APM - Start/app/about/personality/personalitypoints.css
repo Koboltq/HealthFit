@@ -1,0 +1,50 @@
+
+
+
+.img-info {
+    max-width: 15%;
+    margin:15px auto;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.pointTitle {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    margin:15px auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .vertical-align {
+        display: flex;
+        align-items: center;
+    }   
+
+    .awards {
+        max-width: 75%;
+        margin: 20px auto;
+    }   
+
+    .avatar {
+        margin: 20px auto; 
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .awards {
+        max-width: 45%;
+        margin: 20px auto;
+    }
+
+    .avatar {
+        width: 70%;
+        margin: 20px auto; 
+    }
+}

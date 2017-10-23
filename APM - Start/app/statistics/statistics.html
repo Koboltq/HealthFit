@@ -1,0 +1,55 @@
+
+<!--<div class="statistics">
+<div class="wrapper">
+  <div class="col-sm-3" *ngFor="let stat of listStatistics">
+    <div class="statistic-card">
+      <img src="{{stat.image}}" class="img-responsive"/>
+      <h2 class="blockquote" >{{stat.tickStart}}</h2>
+       <p class="count-text ">{{stat.description}}</p>
+    </div>
+  </div>
+</div>
+</div>-->
+
+<div class="statistics background-img">
+  <div class="container-fluid">
+    <div class="row">
+      <div *ngFor="let stat of listStatistics">
+        <div class="col-lg-3 col-6 text-center">
+          <div class="box object-visible" >
+            <span class="icon dark-bg large circle">
+              <img src="{{stat.image}}"/>
+            </span>
+            <h3 class="count-text ">{{stat.description}}</h3>
+            <span class="counter" >{{stat.tickStart}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="footer-top animated-text" style="background-color: rgba(0,0,0,0.3);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="call-to-action text-center">
+            <div class="row">
+              <div class="col-md-8">
+                <h2 class="mt-4">Powerful Bootstrap Template</h2>
+                <h2 class="mt-4">Waster no more time</h2>
+              </div>
+              <div class="col-md-4">
+                <p class="mt-3">
+                  <a href="#" class="btn btn-animated btn-lg btn-gray-transparent">Contact
+                    <i class="fa fa-cart-arrow-down pl-20">
+                    </i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+</div>
+

@@ -1,0 +1,59 @@
+<!--<div class="row" *ngIf="listMetamorphosis">
+    <div class="col-sm-4" *ngFor="let meta of listMetamorphosis">
+        <div class="profile-card" >
+            <img src="{{meta.avatar}}" class="img-responsive img-circle">
+
+            <h2>{{meta.name}}</h2>
+        </div>
+    </div>
+</div>-->
+<div id="measonry_center">
+    <div class="metamorphosis-title">
+        <h2>RECENT METAMORPHOSIS</h2>
+        <div class="blockquote"></div>
+    </div>
+    <div class="metamorphosis-title">
+        <a class="meta-filter-item" (click)="race = 'undefined'">All</a>
+        <a class="meta-filter-item" (click)="race = 'men'" >Men</a>
+        <a class="meta-filter-item" (click)="race = 'female'">Female</a>
+    </div>
+    <!--<form id="filter">
+        <label>tes filtra</label>
+        <input type="text" [(ngModel)]="race" name="something" />
+    </form>-->
+
+    <masonry id="masonry_container" class="group" [options]="myOptions">
+        <masonry-brick *ngFor="let meta of (listMetamorphosis | MyFilterPipe:race) ">
+            <div class="masonry_item">
+                <img class="masonry_image {{meta.class}}" src="{{meta.avatar}}"/>
+                <p class="masonry_name">{{meta.name }} </p>
+            </div>          
+        </masonry-brick>
+    </masonry>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    </div>
+
+</div>
+
+
+
+<!--<div class="grid" *ngIf="listMetamorphosis">
+    <div *ngFor="let meta of listMetamorphosis">
+        <div class="grid-item">
+            <img src="{{meta.avatar}}" class="img-responsive img-circle">
+
+            <h2>{{meta.name}}</h2>
+        </div>
+    </div>
+</div>-->

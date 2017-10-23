@@ -1,0 +1,140 @@
+.page-footer {
+    margin-top: 200px;
+    padding: 70px 0 90px;
+    background: #353d4d;
+    position: relative;
+}
+
+div, p {
+    display: block;
+}
+
+
+
+.page-footer .go-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: #fff;
+    padding-left: 2px;
+    padding-top: 8px;
+    border-radius: 50%;
+    text-align: center;
+    color: #222;
+    text-decoration: none;
+}
+
+.page-footer .go-top i {
+    display: block;
+    font-size: 16px;
+}
+
+.page-footer h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: Lato,"Helvetica Neue",Arial;
+    font-size: 16px;
+}
+
+.page-footer a.legal {
+    color: #afb9cb;
+    display: block;
+    margin-top: 35px;
+    font-size: 14px;
+    font-family: 'Merriweather',Georgia;
+    line-height: 28px;
+}
+
+.page-footer a.legal+.legal {
+    margin-top: 0;
+}
+
+.page-footer p {
+    color: #afb9cb;
+    margin-top: 35px;
+    font-size: 14px;
+    font-family: 'Merriweather',Georgia;
+    line-height: 28px;
+}
+
+.page-footer a.social.first {
+    margin-top: 20px;
+}
+
+.page-footer a.social {
+    width: 30px;
+    height: 30px;
+    background: #babfcd;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 12px;
+    transition: all .2s;
+}
+
+.page-footer a.social i {
+    position: absolute;
+    color: #3f4552;
+    font-size: 19px;
+}
+
+.page-footer a.social i.fa-facebook {
+    top: 7px;
+    left: 10px;
+}
+
+
+.glyphicon {
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 992px) {
+.container {
+    position: relative;
+}
+}
+@media (min-width: 992px) {
+.container {
+    max-width: 960px;
+}
+}
+@media (min-width: 768px){
+.container {
+    max-width: 720px;
+}
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+}
+@media (min-width: 576px){
+.container {
+    max-width: 540px;
+}
+}

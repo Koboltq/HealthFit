@@ -1,0 +1,23 @@
+<div class="row" *ngIf="supports">
+
+    <div class="support-title">
+        <h2>Nasza oferta</h2>
+        <div class="blockquote"></div>
+        <p class="support-text">
+            Skorzystaj z naszych usług, aby zwiększyć swoją pewność siebie, poprawić sylwetkę lub wrócić do sprawności ruchowej. 
+        </p>
+    </div>
+
+    <div class="col-sm-3" *ngFor="let support of supports">
+        <div class="support-card">
+            <a href="{{support.url}}">
+                <span class="icon dark-bg large circle">
+                    <img src="{{support.image}}">
+                </span>
+            </a>
+            <h3>{{support.title}}</h3>
+            <div class="blockquote"></div>
+            <figcaption>{{support.description}}</figcaption>
+        </div>
+    <div>
+</div>

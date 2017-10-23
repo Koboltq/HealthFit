@@ -1,0 +1,29 @@
+
+.circle {
+    border-radius: 100% !important;
+}
+
+.dark-bg {
+    background-color: #373737;
+    color: #cdcdcd;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.icon.large {
+    font-size: 36px;
+    width: 52px;
+    height: 52px;
+    line-height: 42px;
+}
+

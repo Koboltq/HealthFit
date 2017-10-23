@@ -1,0 +1,23 @@
+
+<div class="container text-center" >
+    <div class="row justify-content-md-center">
+        <div  class="col-lg-8" *ngFor="let user of selectedUser">
+            <div class="testimonial" *ngIf="showDiv" [@friendAnimation]="orientation">
+                <div class="testimonial-image">
+                    <img src="{{user.image}}" alt="Jane Doe" title="Jane Doe" class="rounded-circle">
+                </div>
+                <h3 class="mt-3">{{user.title}}</h3>
+                <div class="separator"></div>
+                <div class="testimonial-body">
+                    <p>{{user.description}}</p>
+                    <div class="testimonial-info-1">{{user.name}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="author-image">
+        <a href="http://www.freepik.com" style="visibility:hidden;">Designed by tirachard / Freepik</a>
+    </div>
+</div>
+
+

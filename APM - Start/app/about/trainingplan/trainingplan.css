@@ -1,0 +1,71 @@
+.business-single-client {
+    margin-top: 40px;
+    height: 500px;
+    background-image: url(app/assets/images/gym2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.business-single-client .quote-wrapper {
+    width: 510px;
+    height: 420px;
+    background: #54657b;
+    position: absolute;
+    right: 13%;
+    bottom: -60px;
+    box-shadow: 0 5px 16px rgba(76,84,109,.4);
+    padding: 60px 70px;
+}
+
+.quote-wrapper-space {
+    margin-top:200px;
+    text-align: center;
+}
+
+
+.business-single-client .logo {
+    max-width: 160px;
+}
+
+.business-single-client p {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    font-style: italic;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 48px;
+    height: 48px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+div {
+    display: block;
+}
+
+.quote-space {
+    margin-top: 100px;
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+    text-align: left;
+    font-size:45px;
+    font-family: 'Merriweather';
+    margin-left:5px;
+    display: inline;
+}

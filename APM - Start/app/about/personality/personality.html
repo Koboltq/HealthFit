@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let pTraining of personalityList">
+            <span class="ion-ios-infinite-outline mb-3">
+                <img src="{{pTraining.image}}" class="icon-large circle dark-bg icon" />
+                <h5>{{pTraining.title}}</h5>
+            </span>
+            <p>{{pTraining.description}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<div class="container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="pageTitle">{{pageTitle}}</div>
+    </div> 
+    </div>
+    <div class="row">
+        <div class="col-xs-12 board">
+            Trening personalny to najlepsza forma ćwiczeń oparta na ścisłej współpracy Trenera z Klientem. Podopieczny zawsze może liczyc  na stały nadzór oraz kontrolę poprawności i bezpieczeństwa wykonywanych ćwiczeń. Trener to przede wszystkim  „zastrzyk“ motywacji do działania i wsparcie niezbędne podczas treningu . Każdy z nas ma  różne oczekiwania oraz cele, dlatego trening personalny jest dopasowany do wymagań i możliwości klienta, niezależnie od jego wieku, płci i sprawności fizycznej.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 board">
+            <h3>{{supportName}}</h3>
+            <ul *ngFor="let type of supportList">
+                <li>{{type}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 board">
+            <ul *ngFor="let ppl of personalityPointsList">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="pointTitle">{{ppl.title}}</div>
+                    </div> 
+                </div>
+                <div class="row vertical-align">
+                    <div class="col-md-2 col-sm-2 col-xs-12"><img src="app/assets/teamuser/profile-avatar-user.png" class="awards"/></div>
+                    <div class="col-md-10 col-sm-10 col-xs-12"><p>{{ppl.description}} </p></div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 board">
+            <div class="pageBottom">{{pageBottom}}</div>
+        </div>
+    </div>
+</div>-->

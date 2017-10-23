@@ -1,0 +1,38 @@
+<div class="jumbotron text-center" *ngIf="user">
+    <div class="container">
+        <img [src]="user.avatar" class="avatar img-responsive img-circle" />
+        <h2>{{ user.name }} ( {{user.username }})</h2>
+        <div class="row vertical-align">
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <div class="icon dark-bg large circle img-icon">
+                    <img src="app/assets/teamuser/omnie.png" class="awards "/>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-12"><p>{{user.descriptionsabout}} </p></div>
+        </div>
+        <div class="row vertical-align">
+            <div class="col-md-2 col-md-push-10 col-sm-2 col-sm-push-10 col-xs-12">
+                <div class="icon dark-bg large circle img-icon">
+                    <img src="app/assets/teamuser/osiagniecia.png" class="awards"/>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-pull-2 col-sm-10 col-sm-pull-2 col-xs-12"><p>{{user.descriptionsabout}}</p></div>
+        </div>
+        <div class="row vertical-align">
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <div class="icon dark-bg large circle img-icon">
+                    <img src="app/assets/teamuser/wiedza.png" class="awards"/>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-12"><p>{{user.descriptionsabout}} </p></div>
+        </div>
+        <div class="row vertical-align">
+            <div class="col-md-2 col-md-push-10 col-sm-2 col-sm-push-10 col-xs-12">
+                <div class="icon dark-bg large circle img-icon">
+                    <img src="app/assets/teamuser/szkola.png" class="awards"/>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-pull-2 col-sm-10 col-sm-pull-2 col-xs-12"><p>{{user.descriptionsabout}}</p></div>
+        </div>
+    </div>
+</div>

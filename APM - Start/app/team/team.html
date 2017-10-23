@@ -1,0 +1,20 @@
+<div class="row" *ngIf="users">
+    <div class="container text-center fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <h2>Nasz zespół</h2>
+        <p class="mb-0"></p>
+        <hr class="colored">
+    </div>
+    <div class="col-sm-4" *ngFor="let user of users">
+        <div class="profile-card" [routerLink]="['/team', user.username]">
+            <img src="{{user.avatar}}" class="img-responsive img-circle">
+            <h2>{{user.name}}</h2>
+            <p><a href="https://twitter.com/{{user.username}}">{{user.username}}</a></p>
+            <div>
+                <div class="arrow" style="left: 7.23684%;"></div>
+                <h3 class="popover-title" style="display: none;"></h3>
+                <div class="popover-content" data-content="">{{user.username}}</div>
+            </div>
+            <figcaption>{{user.shortdescription}}</figcaption>
+        </div>
+    </div>
+</div>

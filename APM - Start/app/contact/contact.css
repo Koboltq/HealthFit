@@ -1,0 +1,162 @@
+
+body {
+    margin: 0;
+    font-family: "Segoe UI",'Roboto',"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+}
+
+element.style {
+    visibility: visible;
+    animation-name: fadeIn;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+div {
+    display: block;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+h2 {
+    display: block;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+hr.colored {
+    border-color: #EF4035;
+}
+
+hr {
+    max-width: 100px;
+    height: 2px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.mt-4 {
+    margin-top: 1.5rem!important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mx-auto {
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.764705882em;
+    opacity: 0;
+    transition: top 0.5s ease,opacity 0.5s ease;
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea, .floating-label-form-group select  {
+    z-index: 1;
+    position: relative; 
+    padding-right: 0; 
+    padding-left: 0; 
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: none;
+    box-shadow: none !important;
+    resize: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    color: #495057;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+form .row:first-child .floating-label-form-group {
+    border-top: 1px solid #e1e1e1;
+}
+
+.btn {
+    font-weight: 900;
+    padding: 12px 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+
+
+.btn-secondary {
+    border: 1px solid #222;
+    background-color: transparent;
+    color: #222;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+}
+
+
+.text-danger {
+    color: #dc3545!important;
+}
